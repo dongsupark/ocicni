@@ -31,6 +31,8 @@ type RuntimeConfig struct {
 	// with the hostlocal IP allocator. If left unset, an IP will be
 	// dynamically allocated.
 	IP string
+	// PortMappings is the port mapping of the sandbox.
+	PortMappings []PortMapping
 }
 
 // PodNetwork configures the network of a pod sandbox.
